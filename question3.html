@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="q3.css">
+  <title>Image Gallery</title>
+  <title>Image Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #aedfe4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .gallery-container {
+      width: 80%;
+    }
+    .gallery-heading {
+      text-align: center;
+      margin-bottom: 30px;
+      background-color: rgb(184, 34, 116);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery-heading">
+      <h2>Explore Fc Barcelona</h2>
+    </div>
+  <div class="gallery">
+    <div class="thumbnail" onclick="openLightbox('https://images.unsplash.com/photo-1564221710304-0b37c8b9d729?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+      <img src="https://images.unsplash.com/photo-1564221710304-0b37c8b9d729?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Thumbnail 1">
+    </div>
+    <div class="thumbnail" onclick="openLightbox('https://www.fcbarcelona.com/fcbarcelona/photo/2022/10/23/95c05ed8-7b4a-4563-87ea-9085f9621385/VIC_1659.jpg')">
+      <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2022/10/23/95c05ed8-7b4a-4563-87ea-9085f9621385/VIC_1659.jpg" alt="Thumbnail 2">
+    </div>
+    <div class="thumbnail" onclick="openLightbox('https://media.gettyimages.com/id/476127646/photo/juventus-v-fc-barcelona-uefa-champions-league-final.jpg?s=1024x1024&w=gi&k=20&c=GYLyk2pqF2eEjQX1Tgk4YvysHH-5k33J901pXrISu7s=')">
+      <img src="https://media.gettyimages.com/id/476127646/photo/juventus-v-fc-barcelona-uefa-champions-league-final.jpg?s=1024x1024&w=gi&k=20&c=GYLyk2pqF2eEjQX1Tgk4YvysHH-5k33J901pXrISu7s=" alt="Thumbnail 3">
+    </div>
+    <div class="thumbnail" onclick="openLightbox('https://media.gettyimages.com/id/1347701516/photo/fc-barcelona-v-dinamo-kiev-group-e-uefa-champions-league.jpg?s=1024x1024&w=gi&k=20&c=P5wCeEE9JdRHfwdIAGxrvRr9EoF4IgJz4OqhF_hEPno=')">
+        <img src="https://media.gettyimages.com/id/1347701516/photo/fc-barcelona-v-dinamo-kiev-group-e-uefa-champions-league.jpg?s=1024x1024&w=gi&k=20&c=P5wCeEE9JdRHfwdIAGxrvRr9EoF4IgJz4OqhF_hEPno=" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://media.gettyimages.com/id/651747110/photo/fc-barcelona-v-paris-saint-germain-uefa-champions-league-round-of-16-second-leg.jpg?s=1024x1024&w=gi&k=20&c=XnUi0uKMoNQA3uXfoGxX073aBNgFzqBoACJKgWKP-GU=')">
+        <img src="https://media.gettyimages.com/id/651747110/photo/fc-barcelona-v-paris-saint-germain-uefa-champions-league-round-of-16-second-leg.jpg?s=1024x1024&w=gi&k=20&c=XnUi0uKMoNQA3uXfoGxX073aBNgFzqBoACJKgWKP-GU=" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://media.gettyimages.com/id/651742502/photo/fc-barcelona-v-paris-saint-germain-uefa-champions-league-round-of-16-second-leg.jpg?s=1024x1024&w=gi&k=20&c=cbW5264ud7NlOpwpKZLo9jsaltSyk9EOfSAr2rO6Yx4=')">
+        <img src="https://media.gettyimages.com/id/651742502/photo/fc-barcelona-v-paris-saint-germain-uefa-champions-league-round-of-16-second-leg.jpg?s=1024x1024&w=gi&k=20&c=cbW5264ud7NlOpwpKZLo9jsaltSyk9EOfSAr2rO6Yx4=" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://w.forfun.com/fetch/27/27cab7f82d1ef1dc390842e19bb6f6b7.jpeg')">
+        <img src="https://w.forfun.com/fetch/27/27cab7f82d1ef1dc390842e19bb6f6b7.jpeg" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://c4.wallpaperflare.com/wallpaper/678/720/1024/soccer-lionel-messi-fc-barcelona-wallpaper-preview.jpg')">
+        <img src="https://c4.wallpaperflare.com/wallpaper/678/720/1024/soccer-lionel-messi-fc-barcelona-wallpaper-preview.jpg" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://focus.belfasttelegraph.co.uk/thumbor/1JNCmGST0ltVuXClGG0MrFZkI20=/960x640/smart/prod-mh-ireland/eacc5c4c-92aa-11ed-a2f1-0210609a3fe2')">
+        <img src="https://focus.belfasttelegraph.co.uk/thumbor/1JNCmGST0ltVuXClGG0MrFZkI20=/960x640/smart/prod-mh-ireland/eacc5c4c-92aa-11ed-a2f1-0210609a3fe2" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/74c5cd00-96d8-11e6-94bb-00163ec9f5fa/2060708961/fc-barcelona-theme-screenshot.jpg')">
+        <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/74c5cd00-96d8-11e6-94bb-00163ec9f5fa/2060708961/fc-barcelona-theme-screenshot.jpg" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://wallpapercave.com/wp/MAJrOOx.jpg')">
+        <img src="https://wallpapercave.com/wp/MAJrOOx.jpg" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701983079.jpg')">
+        <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701983079.jpg" alt="Thumbnail 3">
+      </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <img src="" alt="Full-sized Image" id="lightbox-image">
+  </div>
+
+  <script>
+    const thumbnails = document.querySelectorAll('.thumbnail');
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const closeBtn = document.getElementById('close-btn');
+
+thumbnails.forEach(thumbnail => {
+  thumbnail.addEventListener('click', () => {
+    const imageSrc = thumbnail.querySelector('img').src;
+    lightboxImage.src = imageSrc;
+    lightbox.style.display = 'flex';
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+  lightboxImage.src = ''; // Clear the image source
+});
+
+  </script>
+</body>
+</html>
